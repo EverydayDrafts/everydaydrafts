@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Everyday Drafts | A business design company.</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <style>
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Regular.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Regular.woff") format('woff');
+            font-weight: normal;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Regular.woff2") format('woff2');
+            font-weight: normal;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Bold.ttf") format('ttf');
+            font-weight: bold;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Bold.woff") format('woff');
+            font-weight: bold;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Colfax';
+            src: url("https://www.everydaydrafts.com/fonts/Colfax-Bold.woff2") format('woff2');
+            font-weight: bold;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Glosa';
+            src: url("https://www.everydaydrafts.com/fonts/Glosa-Display-Black.ttf") format('ttf');
+            font-weight: bold;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Glosa';
+            src: url("https://www.everydaydrafts.com/fonts/Glosa-Display-Black.woff") format('woff');
+            font-weight: bold;
+            font-style: normal;
+            }
+            @font-face {
+            font-family: 'Glosa';
+            src: url("https://www.everydaydrafts.com/fonts/Glosa-Display-Black.woff2") format('woff2');
+            font-weight: bold;
+            font-style: normal;
+            }
+        </style>
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+                 padding-left: 10px !important;
+                 padding-right: 10px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+
+    </style>
+    <style>
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #000DFF !important;
+	    }
+
+	    /* Media Queries */
+	    @media screen and (max-width: 600px) {
+
+	        /* What it does: Adjust typography on small screens to improve readability */
+	        .email-container p {
+	            font-size: 14px !important;
+                padding-left: 10px;
+                padding-right: 10px;
+	        }
+            .email-container svg {
+                width: 95% !important;
+                padding-left: 2.5% !important;
+            }
+            .bars {
+                visibility: hidden;
+                display: none;
+                margin-left: 2.5%;
+            }
+            
+	    } 
+        
+        @media screen and (min-width: 1281px) {
+            .email-container p {
+	            font-size: 14px !important;
+                padding-left: 36px;
+                padding-right: 36px;
+	        }
+            .email-container svg {
+                width: 90% !important;
+                padding-left: 5% !important;
+            }
+        }
+        
+        @media screen and (min-width: 1025px) and (max-width: 1280px) {
+            .email-container p {
+	            font-size: 14px !important;
+                padding-left: 36px;
+                padding-right: 36px;
+	        }
+            .email-container svg {
+                width: 90% !important;
+                padding-left: 5% !important;
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .email-container p {
+	            font-size: 14px !important;
+                padding-left: 24px;
+                padding-right: 24px;
+	        }
+            .email-container svg {
+                width: 90% !important;
+                padding-left: 5% !important;
+            }
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .email-container p {
+	            font-size: 14px !important;
+                padding-left: 24px;
+                padding-right: 24px;
+	        }
+            .email-container svg {
+                width: 90% !important;
+                padding-left: 5% !important;
+            }
+        }
+        
+        @media screen and (min-width: 481px) and (max-width: 767px) {
+            .email-container p {
+	            font-size: 14px !important;
+                padding-left: 24px;
+                padding-right: 24px;
+	        }
+            .email-container svg {
+                width: 90% !important;
+                padding-left: 5% !important;
+            }
+            .bars {
+                visibility: hidden;
+                display: none;
+            }
+        }
+    </style>
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="padding: 0px; !important; mso-line-height-rule: exactly;">
+	<center style="width: 100%; background-image: linear-gradient( 135deg, #000DFF 10%, #6B73FF 100%);">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #222222;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: colfax;">
+            Everyday Drafts is a new born business design company where we help entrepreneurs transform their business idea into a connected and an adorable brand.
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: colfax;">
+	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <div style="max-width: 750px;" class="email-container">
+	        <!-- Email Body : BEGIN -->
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="padding: 50px 0px 50px 0px;">
+                <div style="height:50px;" class="bars"></div>
+                <!-- 1 Column Text + Button : BEGIN -->
+                <tr>
+                    <td style="background-color: #ffffff;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 75px 0px 75px 0px; font-family: colfax; font-size: 15px; line-height: 20px; color: #555555;">
+                                    <p style="margin: 0px 0 15px 0px; text-align: left; font-family: colfax; font-size: 14px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;">Hello there,</p>
+                                    <p style="margin: 0px 0 15px 0px; text-align: left; font-family: colfax; font-size: 14px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;"><br>&emsp;My name is Valdus and I am the founder and CEO at Everyday Drafts. I will try my best to keep this message simple, straight, and brief for you. Recently, I was going through your website and I strongly believe that there is huge opportunity for your company to evolve as a brand. At Everyday Drafts, we specializes in helping businesses to build a strong brand presence and grow their customer base by building trust and delivering best in class user experience. We believe that we can add a great value to your company and therefore, are looking forward to partner with you and become an important part of this incredible journey of yours.</p>
+                                    <p style="margin: 0px 0 15px 0px; text-align: left; font-family: colfax; font-size: 14px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;">Everyday Drafts is a new born business design company based in Vancouver (Canada), where we work closely with entrepreneurs like you, in one-on-one sessions to help them legally structure and transform their business idea into a connected and an adorable brand. We envision Everyday Drafts to grow into a full fledged-one stop shop for all entrepreneurial needs, but none of this is possible without your support. We are just getting started in business and like every startup in its early days we are both desperate and fragile. If you trying to breath new life into your existing brand or is working on a new and amazing product, please give us a chance to help you give your business idea the best launch, it deserves. We as a company are evolving, and are currently working on some of the biggest projects in tech industry that will shape the future, in the coming years. We are expecting new talents to join our team and are also working to upgrade our website into a more feature rich and a user friendly platform.<br><br><a style="color:#00b0ff" href="https://www.everydaydrafts.com/" target="_blank">Explore More About Us Here ⟶</a></p>
+                                    <p style="margin: 0px 0 15px 0px; text-align: left; font-family: colfax; font-size: 14px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;">Thank you so much, for putting your valuable time in reading this message and also for your business. We look forward to hear from you.<br><br>Use "<b style="color: #555;">EARLYBIRD</b>" (all-caps, without quotes) as coupon code in checkout for exclusive 10% discount.</p>
+                                    <p style="margin: 0px 0 15px 0px; text-align: left; font-family: colfax; font-size: 14px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;">Sincerely,<br>Valdus<br>Founder & CEO <a style="color:#00b0ff;" href="https://twitter.com/EverydayDrafts" target="_blank">@EverydayDrafts</a><br><a style="color:#00b0ff;" href="https://www.everydaydrafts.com/" target="_blank">www.everydaydrafts.com</a></p>
+                                    <p style="margin: 50px 0 15px 0px; text-align: left; font-family: colfax; font-size: 12px; color: #777; line-height: 22px; font-weight: 400; letter-spacing: 0.3px;">In compliance to GDPR  -  This is a cold email and cold emails are not in direct violations of GDPR. We do not intend to spam your inbox, if you do not wish to receive any  further follow ups to this email please opt-out <a style="color:#000000" href="<%asm_global_unsubscribe_raw_url%>" target="_blank">here.</a> You are a valuable prospect/lead to us and we respect your privacy. We do not sell or share your personal information with any third party. To learn more on why cold emails are not in violation of GDPR, please read this very interesting blog from "The Startup" <a style="color:#000000" href="https://www.everydaydrafts.com/" target="_blank">here.</a> If you have any further questions regarding this email, please reach us out at <a style="color:#000000" href="mailto:contact@everydaydrafts.com">contact@everydaydrafts.com.</a><br><br><text style="color: #000;">Technology Stack</text> - Reaching you was made possible by LinkedIn, G-Suite, Hunter.io, Snov.io, Twitter & Sendgrid.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- 1 Column Text + Button : END -->
+            </table>
+            <div style="height: 50px;" class="bars"></div>
+        </div>
+    </center>
+</body>
+</html>
